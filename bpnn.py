@@ -96,4 +96,3 @@ else:
     print(np.around(W2, 3), "W2")
     print(np.around(b2, 3), "b2")
     print(np.around(_y, 2), "_y")
-# print(_yy)
