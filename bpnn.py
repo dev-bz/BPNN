@@ -32,6 +32,13 @@ def sigmold(X, derive=False):
         return X * (1 - X)
 
 
+def softplus(X, derive=False):
+    if not derive:
+        return np.log(1 + np.exp(X))
+    else:
+        return 1 / (1 + np.exp(-X))
+
+
 def relu(X, derive=False):
     if not derive:
         return np.maximum(0, X)
